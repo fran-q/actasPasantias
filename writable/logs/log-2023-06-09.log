@@ -1,0 +1,300 @@
+ERROR - 2023-06-09 15:39:39 --> mysqli_sql_exception: Unknown column 'actas.id' in 'where clause' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(557): CodeIgniter\Model->doFind(false, Array)
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Home.php(13): CodeIgniter\BaseModel->find(Array)
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#12 {main}
+CRITICAL - 2023-06-09 15:39:39 --> Unknown column 'actas.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `actas`
+WHERE `actas`.`id` IN (1)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `actas`
+WHERE `actas`.`id` IN (1)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `actas`
+WHERE `actas`.`id` IN (1)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `actas`
+WHERE `actas`.`id` IN :actas.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(false, [...])
+ 7 APPPATH\Controllers\Home.php(13): CodeIgniter\BaseModel->find([...])
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+ERROR - 2023-06-09 15:41:45 --> mysqli_sql_exception: Unknown column 'id_acta' in 'where clause' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Home.php(13): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#11 {main}
+CRITICAL - 2023-06-09 15:41:45 --> Unknown column 'id_acta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `actas`
+WHERE `id_acta` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `actas`
+WHERE `id_acta` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `actas`
+WHERE `id_acta` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `actas`
+WHERE `id_acta` = :id_acta:', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(13): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+ERROR - 2023-06-09 15:41:46 --> mysqli_sql_exception: Unknown column 'id_acta' in 'where clause' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Home.php(13): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#11 {main}
+CRITICAL - 2023-06-09 15:41:46 --> Unknown column 'id_acta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `actas`
+WHERE `id_acta` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `actas`
+WHERE `id_acta` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `actas`
+WHERE `id_acta` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `actas`
+WHERE `id_acta` = :id_acta:', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(13): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+ERROR - 2023-06-09 15:45:25 --> mysqli_sql_exception: Unknown column 'id_acta' in 'where clause' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Home.php(13): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#11 {main}
+CRITICAL - 2023-06-09 15:45:25 --> Unknown column 'id_acta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `actas`
+WHERE `id_acta` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `actas`
+WHERE `id_acta` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `actas`
+WHERE `id_acta` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `actas`
+WHERE `id_acta` = :id_acta:', [...], false)
+ 5 SYSTEMPATH\Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(13): CodeIgniter\Model->__call('get', [])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+ERROR - 2023-06-09 15:46:09 --> mysqli_sql_exception: Unknown column 'actas.id_acta' in 'where clause' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, 1)
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Home.php(13): CodeIgniter\BaseModel->find(1)
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#12 {main}
+CRITICAL - 2023-06-09 15:46:09 --> Unknown column 'actas.id_acta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `actas`
+WHERE `actas`.`id_acta` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `actas`
+WHERE `actas`.`id_acta` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `actas`
+WHERE `actas`.`id_acta` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `actas`
+WHERE `actas`.`id_acta` = :actas.id_acta:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, 1)
+ 7 APPPATH\Controllers\Home.php(13): CodeIgniter\BaseModel->find(1)
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-09 15:56:30 --> Trying to access array offset on value of type null
+in APPPATH\Views\welcome_message.php on line 237.
+ 1 APPPATH\Views\welcome_message.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php', 237)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-09 15:56:59 --> Attempt to read property "direccion" on null
+in APPPATH\Views\welcome_message.php on line 237.
+ 1 APPPATH\Views\welcome_message.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "direccion" on null', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php', 237)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+ERROR - 2023-06-09 19:29:08 --> mysqli_sql_exception: Unknown column 'actas.id_acta' in 'where clause' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(557): CodeIgniter\Model->doFind(true, 1)
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Home.php(13): CodeIgniter\BaseModel->find(1)
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Home->index()
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#12 {main}
+CRITICAL - 2023-06-09 19:29:08 --> Unknown column 'actas.id_acta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `actas`
+WHERE `actas`.`id_acta` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `actas`
+WHERE `actas`.`id_acta` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `actas`
+WHERE `actas`.`id_acta` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `actas`
+WHERE `actas`.`id_acta` = :actas.id_acta:', [...], false)
+ 5 SYSTEMPATH\Model.php(200): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(557): CodeIgniter\Model->doFind(true, 1)
+ 7 APPPATH\Controllers\Home.php(13): CodeIgniter\BaseModel->find(1)
+ 8 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 9 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-09 19:30:06 --> Attempt to read property "direccion" on null
+in APPPATH\Views\welcome_message.php on line 207.
+ 1 APPPATH\Views\welcome_message.php(207): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "direccion" on null', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php', 207)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(14): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-09 19:38:24 --> Undefined variable $comercios
+in APPPATH\Views\welcome_message.php on line 209.
+ 1 APPPATH\Views\welcome_message.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comercios', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(15): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-09 19:38:26 --> Undefined variable $comercios
+in APPPATH\Views\welcome_message.php on line 209.
+ 1 APPPATH\Views\welcome_message.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comercios', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(15): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-09 19:38:26 --> Undefined variable $comercios
+in APPPATH\Views\welcome_message.php on line 209.
+ 1 APPPATH\Views\welcome_message.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comercios', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(15): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-09 19:38:44 --> Undefined variable $comercios
+in APPPATH\Views\welcome_message.php on line 209.
+ 1 APPPATH\Views\welcome_message.php(209): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $comercios', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php', 209)
+ 2 SYSTEMPATH\View\View.php(213): include('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(15): view('welcome_message', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
