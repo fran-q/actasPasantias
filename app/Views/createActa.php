@@ -18,41 +18,7 @@
 
 </header>
 
-<!-- CONTENT -->
-
-<section>
-    <h1>Lista de Comercios</h1>
-   
-      <table class="table"> 
-            <thead>
-                <th>NOMBRE</th>
-                <th>RAZON</th>
-            </thead>
-            <tbody>
-            <?php 
-                foreach ($comercios as $comercio) { ?>
-                <tr>
-                    <td>
-                        <?php  echo "<p>". $comercio?->nombre ."</p>"; ?>
-                    </td>
-                    <td>
-                        <?php  echo "<p>". $comercio?->nombre ."</p>";  ?>
-                    </td>
-                </tr>
-                <?php   
-                }
-            ?>
-            </tbody>
-        </table>
-       
-    
-</section>
-
-
-<form action="<?= base_url("createActa");?>" method="post">
-    <input type="submit" value="Crear acta">
-</form>
-
+<h1>Vista de ejemplo (aca va el formulario)</h1>
 
 </footer>
 
