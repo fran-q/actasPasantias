@@ -15,5 +15,9 @@ class Home extends BaseController
         return view('home', $datos);
     }
 
+    public function do_createActa()
+    {
+        return view('createActa');
+    }
 
 }

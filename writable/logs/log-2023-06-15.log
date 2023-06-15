@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2023-06-15 14:24:59 --> The framework needs the following extension(s) installed and loaded: intl.
 in SYSTEMPATH\CodeIgniter.php on line 226.
  1 SYSTEMPATH\CodeIgniter.php(226): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
@@ -1020,3 +1021,31 @@ WHERE `email` = :email:
  8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\pasantias\\public\\index.php')
+=======
+CRITICAL - 2023-06-15 13:25:36 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-15 13:25:48 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-15 14:27:01 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Controllers\Home.php on line 21.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(892): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+>>>>>>> cf2c36c080d5716dc067f52d66feabf23274e6a2

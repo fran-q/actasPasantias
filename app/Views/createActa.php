@@ -18,41 +18,31 @@
 
 </header>
 
-<!-- CONTENT -->
-
-<section>
-    <h1>Lista de Comercios</h1>
-   
-      <table class="table"> 
-            <thead>
-                <th>NOMBRE</th>
-                <th>RAZON</th>
-            </thead>
-            <tbody>
-            <?php 
-                foreach ($comercios as $comercio) { ?>
-                <tr>
-                    <td>
-                        <?php  echo "<p>". $comercio?->nombre ."</p>"; ?>
-                    </td>
-                    <td>
-                        <?php  echo "<p>". $comercio?->nombre ."</p>";  ?>
-                    </td>
-                </tr>
-                <?php   
-                }
-            ?>
-            </tbody>
-        </table>
-       
+<h1>Formulario de Actas</h1>
+  <form action="procesar_formulario.php" method="POST">
+    <label for="TIPO DE ACTA">TIPO DE ACTA:</label>
+    <input type="text" id="tipo_acta" name="tipo_acta" required><br><br>
     
-</section>
-
-
-<form action="<?= base_url("createActa");?>" method="post">
-    <input type="submit" value="Crear acta">
-</form>
-
+    <label for="NOMBRE DE COMERCIO">NOMBRE DE COMERCIO:</label>
+    <input type="text" id="comercio" name="comercio" required><br><br>
+    
+    <label for="DIRECCIÓN">DIRECCIÓN:</label>
+    <input type="text" id="direccion" name="direccion" required><br><br>
+    
+    <label for="RESPONSABLE">RESPONSABLE:</label>
+    <input type="text" id="responsable" name="responsable" required><br><br>
+    
+    <label for="LEGAJO INSPECTOR">LEGAJO INSPECTOR:</label>
+    <input type="text" id="inspector" name="inspector" required><br><br>
+    
+    <label for="EMPRESA DESINFECCIÓN">EMPRESA DESINFECCIÓN:</label>
+    <input type="text" id="empresa" name="empresa" required><br><br>
+    
+    <label for="DESINFECCIÓN">DESINFECCIÓN:</label>
+    <input type="text" id="desinfeccion" name="desinfeccion" required><br><br>
+    
+    <input type="submit" value="Enviar">
+  </form>
 
 </footer>
 

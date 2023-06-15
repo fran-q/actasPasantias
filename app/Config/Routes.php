@@ -35,6 +35,7 @@ $routes->get('register', 'Register::index');
 
 $routes->post('register', 'Register::do_register');
 $routes->post('login', 'Login::do_login');
+$routes->post('createActa', 'Home::do_createActa');
 /*
  * -----------------------------------------------------------------
  *---------------------------------
