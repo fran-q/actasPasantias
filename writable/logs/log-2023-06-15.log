@@ -1,0 +1,16 @@
+CRITICAL - 2023-06-15 13:25:36 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-15 13:25:48 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
