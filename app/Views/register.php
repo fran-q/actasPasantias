@@ -17,26 +17,33 @@
 </header>
 <body>
     <div class="card">
-    <div class="card-body">
-    <form method="post" action="<?= base_url("register");   ?>" >
-        <h1>Registrarse</h1>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input name="email"  required type="email" class="form-control" id="email" placeholder="name@example.com">
+        <div class="card-body">
+            <form method="post" action="<?= base_url("register");   ?>" >
+                <h1>Registrarse</h1>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input name="email"  required type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input name="password" required type="password" class="form-control" id="password" placeholder="Contraseña">
+                </div>
+                <div class="mb-3">
+                    <label for="password2"  class="form-label">Password</label>
+                    <input name="password2" required type="password" class="form-control" id="password2" placeholder="Repetir contraseña">
+                </div>
+                <div class="mnb-3">
+                    <input type="submit" value="Registrarse" class="btn btn-primary" />
+                </div>
+                
+            </form>
+            <br>
+            <form action="<?= base_url("register");?>" method="post">
+                <div class="mnb-3">
+                    <input type="submit" value="login" class="btn btn-secondary">
+                </div>
+            </form>
         </div>
-        <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <input name="password" required type="password" class="form-control" id="password" placeholder="Contraseña">
-        </div>
-        <div class="mb-3">
-            <label for="password2"  class="form-label">Password</label>
-            <input name="password2" required type="password" class="form-control" id="password2" placeholder="Repetir contraseña">
-        </div>
-        <div class="mnb-3">
-            <input type="submit" value="Registrarse" class="btn btn-primary" /></div>
-        </div>
-    </form>    
-    </div>
     </div>
 </body>
 
