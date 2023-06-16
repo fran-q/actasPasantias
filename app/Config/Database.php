@@ -29,7 +29,7 @@ class Database extends Config
         'hostname' => 'localhost',
         'username' => 'root',
         'password' => '',
-        'database' => 'proyecto_actas',
+        'database' => 'proyectos_actas',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
