@@ -1,0 +1,238 @@
+ERROR - 2023-06-16 13:31:30 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'proyecto_actas', 3306, '', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Login->do_login()
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Login->do_login()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#11 {main}
+CRITICAL - 2023-06-16 13:31:30 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'proyecto_actas'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->do_login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+ERROR - 2023-06-16 13:31:55 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'proyecto_actas', 3306, '', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Login->do_login()
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Login->do_login()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#11 {main}
+CRITICAL - 2023-06-16 13:31:55 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'proyecto_actas'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->do_login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+ERROR - 2023-06-16 13:37:35 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'proyecto_actas', 3306, '', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Register.php(26): CodeIgniter\Model->insert(Array)
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Register->do_register()
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(782): CodeIgniter\Model->doInsert(Array)
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(730): CodeIgniter\BaseModel->insert(Array, true)
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Register.php(26): CodeIgniter\Model->insert(Array)
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Register->do_register()
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#12 {main}
+CRITICAL - 2023-06-16 13:37:35 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'proyecto_actas'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`email`, `password`) VALUES (:email:, :password:)', [...], false)
+ 3 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->insert()
+ 4 SYSTEMPATH\BaseModel.php(782): CodeIgniter\Model->doInsert([...])
+ 5 SYSTEMPATH\Model.php(730): CodeIgniter\BaseModel->insert([...], true)
+ 6 APPPATH\Controllers\Register.php(26): CodeIgniter\Model->insert([...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Register->do_register()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+ERROR - 2023-06-16 13:47:34 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'proyecto_actas', 3306, '', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Login->do_login()
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Login->do_login()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#11 {main}
+CRITICAL - 2023-06-16 13:47:34 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'proyecto_actas'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->do_login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+ERROR - 2023-06-16 13:47:42 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'proyecto_actas', 3306, '', 0)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Login->do_login()
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'proyecto_actas' in C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 C:\Users\pasantedesarrollo\proyectos\actaComercio\app\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+#6 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(934): App\Controllers\Login->do_login()
+#7 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\pasantedesarrollo\proyectos\actaComercio\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\pasantedesarrollo\proyectos\actaComercio\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasant...')
+#11 {main}
+CRITICAL - 2023-06-16 13:47:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'proyecto_actas'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(22): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->do_login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
+CRITICAL - 2023-06-16 13:49:01 --> Attempt to read property "id" on null
+in APPPATH\Controllers\Login.php on line 23.
+ 1 APPPATH\Controllers\Login.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\app\\Controllers\\Login.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Login->do_login()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\pasantedesarrollo\\proyectos\\actaComercio\\public\\index.php')
