@@ -9,44 +9,69 @@
     
 
 </head>
-<body>
-
+<body table="" style="background-color: cadetblue; margin: 50px">
 <!-- HEADER: MENU + HEROE SECTION -->
+
 <header>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>    
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
 </header>
-
-<h1>Formulario de Actas</h1>
-  <form action="procesar_formulario.php" method="POST">
-    <label for="TIPO DE ACTA">TIPO DE ACTA:</label>
-    <input type="text" id="tipo_acta" name="tipo_acta" required><br><br>
-    
-    <label for="NOMBRE DE COMERCIO">NOMBRE DE COMERCIO:</label>
-    <input type="text" id="comercio" name="comercio" required><br><br>
-    
-    <label for="DIRECCIÓN">DIRECCIÓN:</label>
-    <input type="text" id="direccion" name="direccion" required><br><br>
-    
-    <label for="RESPONSABLE">RESPONSABLE:</label>
-    <input type="text" id="responsable" name="responsable" required><br><br>
-    
-    <label for="LEGAJO INSPECTOR">LEGAJO INSPECTOR:</label>
-    <input type="text" id="inspector" name="inspector" required><br><br>
-    
-    <label for="EMPRESA DESINFECCIÓN">EMPRESA DESINFECCIÓN:</label>
-    <input type="text" id="empresa" name="empresa" required><br><br>
-    
-    <label for="DESINFECCIÓN">DESINFECCIÓN:</label>
-    <input type="text" id="desinfeccion" name="desinfeccion" required><br><br>
-    
-    <input type="submit" value="Enviar">
+<div class="formulario">
+<form action="procesar_formulario.php"method="POST">
+<style>
+        table {
+            border-collapse:collapse;
+            margin:0 auto;
+        }
+        td {
+            border:none;
+            padding:0;
+            text-align: left;
+        }
+        </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td><font size="+2">FORMULARIO DE ACTA</font><br> <br></td>
+    </tr>
+    <tr>
+      <td><label for="TIPO DE ACTA">TIPO DE ACTA:</label>
+      <input type="text" id="tipo_acta" name="tipo_acta" required><br><br> </td>
+    </tr>
+    <tr>
+        <td><label for="NOMBRE DE COMERCIO">NOMBRE DE COMERCIO:</label>
+        <input type="text" id="comercio" name="comercio" required><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="DIRECCIÓN">DIRECCIÓN:</label>
+        <input type="text" id="direccion" name="direccion" required><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="RESPONSABLE">RESPONSABLE:</label>
+        <input type="text" id="responsable" name="responsable" required><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="LEGAJO INSPECTOR">LEGAJO INSPECTOR:</label>
+        <input type="text" id="inspector" name="inspector" required><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="EMPRESA DESINFECCIÓN">EMPRESA DESINFECCIÓN:</label>
+        <input type="text" id="empresa" name="empresa" required><br><br></td>
+    </tr>
+    <tr>
+        <td><label for="DESINFECCIÓN">DESINFECCIÓN:</label>
+        <input type="text" id="desinfeccion" name="desinfeccion" required><br><br></td>
+    </tr>
+    <tr>
+        <td><p align= "center"><input type="submit" value="Enviar"></p></td>
+    </tr>
+  </table>
   </form>
+ 
+</div>
 
-</footer>
-
-<!-- SCRIPTS -->
 
 <script>
     function toggleMenu() {
@@ -58,7 +83,7 @@
     }
 </script>
 
-<!-- -->
+
 
 </body>
 </html>
